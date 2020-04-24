@@ -109,11 +109,15 @@ recognition.onresult = event => {
                     console.log(transcript);
                     skjulKort();
                     $("#frontdiv").hide();
-                    $("#" + key).show();                   
+                    $("#" + key).show();
+                    return;                 
                 }
             }
         }
     }
+    $("#frontdiv").hide();
+    skjulKort();
+    $("#error").show();
 };
 
 /*knap.addEventListener('click', () => {
