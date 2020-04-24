@@ -7,10 +7,10 @@ var noegleord = [
      "biblotek": ["biblo", "bøger", "bog", "låne", "udlån", "aflevere", "lokale 14"]
     },
     {
-        "innolab": ["foredrag", "innolab"]
+        "innolab": ["innolab", "innolab 1", "innolab 2", "innolab 3"]
     },
     {
-        "fysik": ["fysik lokale", "fysik lokalet", "fysiklokale", "andreas", "george"]
+        "fysik": ["fysik lokale", "fysik lokalet", "fysiklokale", "andreas", "george", "georg"]
     },
     {
         "kontor": ["ledelse", "rektor", "katrine", "leder", "søren", "vicerektor", "vice rektor"]
@@ -19,10 +19,10 @@ var noegleord = [
         "kantine": ["mad", "købe sandwich", "sandwich", "dagensret", "dagens ret", "sydsal", "sydsalen"]
     },
     {
-        "lokale21": ["","",""]
+        "lokale21": ["klasselokale21","klasse lokale 21","klasse 21", "rum 21", ""]
     },
     {
-        "studieadmin": ["","",""]
+        "studieadmin": ["joan", "information", "administration", "4g", "fjerde gear", ""]
     }
 
 
@@ -65,7 +65,6 @@ recognition.onstart = function (){
             for (const word of words) {
                 if (transcript.includes(word)) {
                     console.log("Keyword: %s", key);
-                    console.log(transcript);
                 }
             }
         }
